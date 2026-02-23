@@ -1,0 +1,650 @@
+<!DOCTYPE html><html lang="ru"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" type="image/x-icon" href="/favicon.ico"><meta name="generator" content="Astro v5.17.3"><title>Мой Газ Смородина Онлайн ✦ Личный кабинет ✔︎ инструкция | Мой Газ</title><meta name="description" content="Смородина межрегионгаз ЛК ► Инструкция, функционал, как регистрация и вход в кабинет оплаты за газ, ✔︎ как восстановить пароль от Смородина мойГАЗ."><!-- Open Graph/SEO --><meta property="og:title" content="Мой Газ Смородина Онлайн ✦ Личный кабинет ✔︎ инструкция | Мой Газ"><meta property="og:description" content="Смородина межрегионгаз ЛК ► Инструкция, функционал, как регистрация и вход в кабинет оплаты за газ, ✔︎ как восстановить пароль от Смородина мойГАЗ."><meta property="og:type" content="website"><meta property="og:site_name" content="Мой Газ"><!-- Yandex.Metrika counter --><script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        ((k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a));
+      })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js?id=90372986", "ym");
+      ym(90372986, "init", {
+        clickmap: true,
+        referrer: document.referrer,
+        url: location.href,
+        accurateTrackBounce: true,
+        trackLinks: true,
+      });
+    </script><noscript><div><img src="https://mc.yandex.ru/watch/90372986" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --><!-- Место для вашего скрипта рекламы --><script>
+  (async function () {
+    // Строка инициализации контекста для Яндекса
+    const contextCbScript = document.createElement("script");
+    contextCbScript.text = "window.yaContextCb = window.yaContextCb || [];";
+    document.head.appendChild(contextCbScript);
+
+    const headerBiddingScript = document.createElement("script");
+    headerBiddingScript.src = "https://yandex.ru/ads/system/header-bidding.js";
+    headerBiddingScript.async = true;
+    document.head.appendChild(headerBiddingScript);
+
+    const contextScript = document.createElement("script");
+    contextScript.src = "https://yandex.ru/ads/system/context.js";
+    contextScript.async = true;
+    document.head.appendChild(contextScript);
+
+    const loadScript = (src, opts = {}) => {
+      const s = document.createElement("script");
+      s.src = src;
+      if (opts.async) s.async = true;
+      if (opts.defer) s.defer = true;
+      if (opts.crossOrigin) s.crossOrigin = opts.crossOrigin;
+      document.head.appendChild(s);
+    };
+
+    // Загружаем необходимые библиотеки
+    loadScript("/js/ads-hb-config.js", { defer: true });
+    loadScript("https://ad.mail.ru/static/ads-async.js", { async: true });
+    loadScript("https://news.2xclock.com/loader.min.js", { async: true, crossOrigin: "use-credentials" });
+
+    // Функция создания рекламного контейнера и ДОБАВЛЕНИЯ ЕГО СКРИПТА В ДОМ
+    const createAdBlock = (id, params, target, position = "after") => {
+      if (document.getElementById(id)) return;
+
+      const adDiv = document.createElement("div");
+      adDiv.id = id;
+      adDiv.className = "adfox-article-block my-8 flex justify-center w-full min-h-[250px] not-prose";
+
+      if (position === "prepend") target.prepend(adDiv);
+      else if (position === "append" || position === "end") target.append(adDiv);
+      else if (position === "before") target.before(adDiv);
+      else target.after(adDiv);
+
+      // Генерируем исполняемый скрипт
+      const scriptEl = document.createElement("script");
+      scriptEl.textContent = `
+        window.yaContextCb.push(() => {
+          Ya.adfoxCode.create({
+            ownerId: 281876,
+            containerId: '${id}',
+            params: ${JSON.stringify(params)}
+          });
+        });
+      `;
+      // Вставляем ровно после div'a
+      adDiv.insertAdjacentElement("afterend", scriptEl);
+    };
+
+    // Логика автоматической расстановки блоков в контенте
+    const insertInArticleAds = () => {
+      const articleContent = document.querySelector(".article-content");
+      const companyLayout = document.querySelector(".company-layout");
+      const company_article = document.querySelector(".company-description");
+
+      // Ищем блок "Читайте также" или "Другие компании" (оба имеют класс .related-posts-section или .related-companies-section)
+      // Для универсальности ищем по атрибуту class^="related-" или конкретно:
+      const relatedSection = document.querySelector(".related-posts-section, .related-companies-section");
+
+      if (articleContent) {
+        // Блок в начале статьи
+        createAdBlock("adfox_block_1", { pp: "g", ps: "gggj", p2: "ibgn" }, articleContent, "prepend");
+      }
+
+      if (companyLayout) {
+        // В компаниях первый блок выводится после company-layout на том же уровне
+        createAdBlock("adfox_block_1", { pp: "g", ps: "gggj", p2: "ibgn" }, company_article, "end");
+      }
+
+      if (relatedSection) {
+        // Второй блок перед блоком related (как в статьях, так и в компаниях)
+        createAdBlock("adfox_block_2", { pp: "h", ps: "gggj", p2: "ibgn" }, relatedSection, "before");
+      } else if (articleContent) {
+        // Фолбэк для статей без related
+        createAdBlock("adfox_block_2", { pp: "h", ps: "gggj", p2: "ibgn" }, articleContent, "append");
+      }
+    };
+
+    const initAds = () => {
+      setTimeout(insertInArticleAds, 200);
+    };
+
+    // Ждем готовности DOM
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initAds);
+    } else {
+      initAds();
+    }
+  })();
+</script> <style>
+  [id^="adfox_block_"] {
+    display: inline-block;
+    width: 100%;
+    min-height: 250px;
+    background: rgb(228, 233, 246);
+    margin: 10px auto;
+  }
+</style><link rel="stylesheet" href="/assets/kontakty.BsMog8uo.css">
+<link rel="stylesheet" href="/assets/_slug_.GperDyLm.css"></head> <body> <div class="page-wrapper"> <header class="header" data-astro-cid-3ef6ksr2> <div class="container" data-astro-cid-3ef6ksr2> <div class="header-inner" data-astro-cid-3ef6ksr2> <a href="/" class="logo" data-astro-cid-3ef6ksr2> <img src="/logo.png" alt="Мой Газ" class="logo-img" width="32" height="32" data-astro-cid-3ef6ksr2> <span class="logo-text" data-astro-cid-3ef6ksr2>Мой<span class="logo-highlight" data-astro-cid-3ef6ksr2>Газ</span></span> </a> <nav class="nav" data-astro-cid-3ef6ksr2> <ul class="nav-list" data-astro-cid-3ef6ksr2> <li data-astro-cid-3ef6ksr2><a href="/" class="nav-link" data-astro-cid-3ef6ksr2>Главная</a></li> <li data-astro-cid-3ef6ksr2><a href="/all-post" class="nav-link" data-astro-cid-3ef6ksr2>Все записи</a></li> <li data-astro-cid-3ef6ksr2><a href="/komp" class="nav-link" data-astro-cid-3ef6ksr2>Компании</a></li> </ul> </nav> <div class="header-actions" data-astro-cid-3ef6ksr2> <a href="/kontakty" class="btn btn-primary btn-sm" data-astro-cid-3ef6ksr2>Связаться</a> </div> </div> </div> </header>  <main class="main-content">  <article class="article-page" data-astro-cid-yvbahnfj> <div class="container" data-astro-cid-yvbahnfj> <div class="article-inner" data-astro-cid-yvbahnfj> <header class="article-header" data-astro-cid-yvbahnfj> <div class="article-category" data-astro-cid-yvbahnfj>Личный кабинет</div> <h1 class="article-title" data-astro-cid-yvbahnfj>Личный кабинет ◆ Мой Газ Смородина Онлайн</h1> <div class="article-meta" data-astro-cid-yvbahnfj> <time datetime="2019-08-26 16:12:35" data-astro-cid-yvbahnfj> 26 августа 2019 г. </time> </div> <div class="article-featured-image" data-astro-cid-yvbahnfj> <img src="https://mojgaz.ru/wp-content/uploads/mojgaz_ru.jpg" alt="Личный кабинет ◆ Мой Газ Смородина Онлайн" loading="eager" data-astro-cid-yvbahnfj> </div> </header> <div class="article-content" data-astro-cid-yvbahnfj> <!-- wp:paragraph -->
+<p><em>Самая подробная информация о том: как передавать показания, как зарегистрироваться и как оплатить.</em></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Веб-платформа <strong>Мой Газ Смородина Онлайн</strong> создан для абонентов компании ОАО Газпром и имеет персональный кабинет для оплаты, передачи показаний и обращений в компанию для решения других вопросов связанных с газом.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Таким образом, многие вопросы клиенты могут решить через личный кабинет<strong> Мой газ, </strong>непосредственно через интернет.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Газпром межрегионгаз личный кабинет МойГАЗ регистрация </h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"color":{"background":"#8dd2fc7a"}},"fontSize":"medium"} -->
+<p class="has-background has-medium-font-size" style="background-color:#8dd2fc7a"><strong>Как зарегистрироваться на сайте Мой Газ Смородина Онлайн</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Процедура регистрации очень проста - откройте страницу <a href="https://мойгаз.смородина.онлайн/login" target="_blank" rel="noreferrer noopener nofollow">сайта</a> и нажмите пункт меню - [<strong>регистрация</strong>]. </p>
+<!-- /wp:paragraph -->
+<!-- wp:image {"align":"center","id":63,"sizeSlug":"full","className":"is-style-default"} -->
+<figure class="wp-block-image aligncenter size-full is-style-default"><img src="/wp-content/uploads/2019/08/registracija.png" alt="межрегионгаз личный кабинет для физических лиц" class="wp-image-63"><figcaption class="wp-element-caption">форма регистрации в ЛК Мой Газ</figcaption></figure>
+<!-- /wp:image -->
+<!-- wp:html -->
+<p><a name="vhodlk"></a></p>
+<!-- /wp:html -->
+<!-- wp:shortcode -->
+<a href="https://мойгаз.смородина.онлайн/login" target="_blank" rel="nofollow noindex" class="su-button center">
+  <span class="su-icon">👤</span>
+  <span class="su-content center">
+    <span class="su-title">Вход в личный кабинет</span>
+    <span class="su-desc">мойгаз.смородина.онлайн</span>
+  </span>
+</a>
+<!-- /wp:shortcode -->
+<!-- wp:spacer {"height":"30px"} -->
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+<!-- wp:paragraph -->
+<p>Логин для системы мой газ – это электронная почта или телефон, а также придумайте пароль.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Пароль должен быть не менее 6 символов. </p>
+<!-- /wp:paragraph -->
+<!-- wp:image {"id":66,"sizeSlug":"full","className":"is-style-default"} -->
+<figure class="wp-block-image size-full is-style-default"><img src="/wp-content/uploads/2019/09/mojgaz4-1024px.jpg" alt="смородина газ передать показания счетчика" class="wp-image-66"><figcaption class="wp-element-caption">смородина газ пароль</figcaption></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph -->
+<p>Далее вы получите код в письме на почту или в смс на телефон.</p>
+<!-- /wp:paragraph -->
+<!-- wp:luckywp/tableofcontents {"wrapNoindex":true} /-->
+<!-- wp:image {"align":"center","id":69,"sizeSlug":"full","linkDestination":"media","className":"lightbox"} -->
+<figure class="wp-block-image aligncenter size-full lightbox"><a href="/wp-content/uploads/2019/09/mojgaz2-1.jpg"><img src="/wp-content/uploads/2019/09/mojgaz2-1.jpg" alt="код от ЛК Мойгаз" class="wp-image-69"></a><figcaption class="wp-element-caption">получение и подтверждение кода</figcaption></figure>
+<!-- /wp:image -->
+<!-- wp:quote {"className":"article-blockquote-3"} -->
+<blockquote class="wp-block-quote article-blockquote-3"><!-- wp:paragraph -->
+<p>Используйте действующую почту[email] или телефон.</p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+<!-- wp:paragraph -->
+<p>Вы не получили короткий код подтверждения? нажмите кнопку – отправить код повтороно.</p>
+<!-- /wp:paragraph -->
+<!-- wp:group -->
+<div class="wp-block-group"><!-- wp:gallery {"columns":2,"linkTo":"media"} -->
+<figure class="wp-block-gallery has-nested-images columns-2 is-cropped"><!-- wp:image {"id":67,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="/wp-content/uploads/2019/09/mojgaz3-1024px.jpg"><img src="/wp-content/uploads/2019/09/mojgaz3-1024px.jpg" alt="" class="wp-image-67"></a></figure>
+<!-- /wp:image -->
+<!-- wp:image {"id":70,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="/wp-content/uploads/2019/09/mojgaz1.jpg"><img src="/wp-content/uploads/2019/09/mojgaz1.jpg" alt="" class="wp-image-70"></a></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery --></div>
+<!-- /wp:group -->
+<!-- wp:paragraph -->
+<p>Далее вам откроется сообщение о согласии на обработку персональных данных. Подтвердите согласие для дальнейших действий на газпром <strong>Smorodina</strong>.</p>
+<!-- /wp:paragraph -->
+<!-- wp:image {"align":"center","id":62,"sizeSlug":"large","linkDestination":"custom","className":"lightbox"} -->
+<figure class="wp-block-image aligncenter size-large lightbox"><a href="/wp-content/uploads/2019/09/gazbrowser6-1024px.jpg"><img src="/wp-content/uploads/2019/09/gazbrowser6-1024px-768x546.jpg" alt="оплатить газ" class="wp-image-62"></a></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph -->
+<p>Как только пароль будет введён на сайте «Смородина», вы попадете на страницу личного кабинета.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"align":"center","style":{"color":{"text":"#950507","background":"#fef69773"}},"fontSize":"medium"} -->
+<p class="has-text-align-center has-text-color has-background has-medium-font-size" style="color:#950507;background-color:#fef69773"><strong>Поздравляем!  Теперь у вас есть свой кабинет смородина газ.</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Подключение личного лицевого счета межрегионгаз</h2>
+<!-- /wp:heading -->
+<!-- wp:group -->
+<div class="wp-block-group"><!-- wp:gallery {"ids":[],"shortCodeTransforms":[],"columns":2,"linkTo":"media","className":"aligncenter"} -->
+<figure class="wp-block-gallery has-nested-images columns-2 is-cropped aligncenter"><!-- wp:image {"id":72,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="/wp-content/uploads/2019/09/gazbrowser62-1024px-768x546.jpg"><img src="/wp-content/uploads/2019/09/gazbrowser62-1024px-768x546.jpg" alt="межрегионгаз филиал" class="wp-image-72"></a></figure>
+<!-- /wp:image -->
+<!-- wp:image {"id":71,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="/wp-content/uploads/2019/09/gazbrowser61-1024px-768x546.jpg"><img src="/wp-content/uploads/2019/09/gazbrowser61-1024px-768x546.jpg" alt="" class="wp-image-71"></a></figure>
+<!-- /wp:image -->
+<!-- wp:image {"id":73,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="/wp-content/uploads/2019/09/gazbrowser63-1024px-768x546.jpg"><img src="/wp-content/uploads/2019/09/gazbrowser63-1024px-768x546.jpg" alt="межрегионгаз филиал" class="wp-image-73"></a></figure>
+<!-- /wp:image --><figcaption class="blocks-gallery-caption wp-element-caption">нажми для увеличения</figcaption></figure>
+<!-- /wp:gallery --></div>
+<!-- /wp:group -->
+<!-- wp:paragraph -->
+<p>Далее, если у вас есть номер лицевого счета для оплаты услуг за газ, введите его в поле формы на сайте смородина онлайн мойгаз.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Для этого сначала выберете поставщика газа согласно своего региона.<em> Например: Межрегионгаз Москва.</em></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"style":{"color":{"background":"#e3edfd"}},"fontSize":"medium"} -->
+<p class="has-background has-medium-font-size" style="background-color:#e3edfd">Номер лиц.счета можно узнать в квитанции на оплату услуг газа. Абонентский счет – это 12 цифр, из которых: первые две цифры обозначают участок абонента, следующие цифры ваш <strong>лицевой  счет</strong>. Именно их и нужно заполнить в поле формы на сайте.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Если не получилось подключить таким способом, то следует ✓<strong>создать заявку на техническое_присоединение.</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Техническое присоединение: создание заявки</h2>
+<!-- /wp:heading -->
+<!-- wp:gallery {"linkTo":"media","sizeSlug":"full","className":"aligncenter"} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped aligncenter"><!-- wp:image {"id":74,"sizeSlug":"full","linkDestination":"media"} -->
+<figure class="wp-block-image size-full"><a href="/wp-content/uploads/2019/09/gazbrowser64-1024px.jpg"><img src="/wp-content/uploads/2019/09/gazbrowser64-1024px.jpg" alt="присоединить ЛК газа" class="wp-image-74"></a></figure>
+<!-- /wp:image -->
+<!-- wp:image {"id":75,"sizeSlug":"full","linkDestination":"media"} -->
+<figure class="wp-block-image size-full"><a href="/wp-content/uploads/2019/09/gazbrowser65-1024px.jpg"><img src="/wp-content/uploads/2019/09/gazbrowser65-1024px.jpg" alt="" class="wp-image-75"></a></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->
+<!-- wp:paragraph -->
+<p>Нажмите соответсвующий ☑︎пункт в диалоговом окне сайта.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Вход в <em>Смородина онлайн газ</em> – личный кабинет</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>После заполнения счета в форме сайта вы увидите окно о подключении лиц.счета и рекомендацию расширить для себя пользовательскую версию системы.</p>
+<!-- /wp:paragraph -->
+<!-- wp:image {"align":"center","id":64,"sizeSlug":"full","linkDestination":"media"} -->
+<figure class="wp-block-image aligncenter size-full"><a href="/wp-content/uploads/2019/08/vhod.png"><img src="/wp-content/uploads/2019/08/vhod.png" alt="Как сделать вход в ЛК ГАЗ – мой газ смородина личный кабинет." class="wp-image-64"></a><figcaption class="wp-element-caption">форма входа в ЛК Мой Газ</figcaption></figure>
+<!-- /wp:image -->
+<!-- wp:spacer {"height":"20px"} -->
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+<!-- wp:shortcode -->
+<a href="https://мойгаз.смородина.онлайн/login" target="_blank" rel="nofollow noindex" class="su-button center">
+  <span class="su-icon">👤</span>
+  <span class="su-content center">
+    <span class="su-title">Вход в личный кабинет</span>
+    <span class="su-desc">мойгаз.смородина.онлайн</span>
+  </span>
+</a>
+<!-- /wp:shortcode -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Восстановление пароля</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Каждый может потерять или забыть записать пароль. Для получения нового пароля необходимо создать заявку по восстановлению доступа в аккаунт мой-газ. Это можно сделать отправив  запрос на главной(основной) странице веб-сайта.</p>
+<!-- /wp:paragraph -->
+<!-- wp:gallery {"columns":2,"linkTo":"media"} -->
+<figure class="wp-block-gallery has-nested-images columns-2 is-cropped"><!-- wp:image {"id":78,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="/wp-content/uploads/2019/09/reccowery.png"><img src="/wp-content/uploads/2019/09/reccowery.png" alt="восстановить пароль" class="wp-image-78"></a></figure>
+<!-- /wp:image -->
+<!-- wp:image {"id":77,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="/wp-content/uploads/2019/09/reccovery2.jpg"><img src="/wp-content/uploads/2019/09/reccovery2.jpg" alt="новый пароль" class="wp-image-77"></a></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->
+<!-- wp:paragraph -->
+<p>В форме вводим свой логин, придумываем и вводим пароль, подтверждаем его и отправляем на восстановление. На email или смартфон вы получите короткий код для создания нового пароля, который необходимо ввести в появившемся окне. После принятия кода вы получите доступ в свой персональный акаунта для последующей работы в системе.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Возможности личного кабинета МойГаз•Смородина•онлайн</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>После окончания регистрации абоненту в личном•кабинете будет открыт доступ ко всем операциям аккаунта мой⦿газ⦿смородина (расширенный пакет):</p>
+<!-- /wp:paragraph -->
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>в любое время абонент сможет посмотреть начисления за газ;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>оплатить задолженность за газоснабжение;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>узнать тарифы на услуги газа своего региона;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li> передать актуальные показания счетчиков газа;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li> оформить заявку на установку или замену своих газовых счетчиков;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>оформить заявку на тех.поддержку и получить помощь от службы Смородина⦿онлайн;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li> изменить свои личные данные;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li> анализировать и мониторить затраты по газ-счетам за любой период времени;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>также абонент может управлять несколькими счетами.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li> получить электронную квитанцию об оплате;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li> узнать адреса отделений межрегионгаза в вашем регионе;</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+<!-- wp:paragraph -->
+<p>Доступ к опциям сервиса Смородины⦿МойГАЗ можно получить после активирования расширенной версии и предоставления всей необходимой информации о потребителе газа, а также идентификации его в системе ►МойГАЗ. </p>
+<!-- /wp:paragraph -->
+<!-- wp:image {"align":"center","id":80,"sizeSlug":"full"} -->
+<figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2019/09/gazbrowser71-1024px.jpg" alt="версия газ лк" class="wp-image-80"><figcaption class="wp-element-caption">Подключить расширенную версию</figcaption></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph -->
+<p>Идентификацию своих личных данных вы сможете произвести используя несколько вариантов на выбор:</p>
+<!-- /wp:paragraph -->
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>подтверждением пин-кода, который можно получить в одном из отделений ✓газпром межрегионгаза;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>активацией фабричного номера счетчиков газа в персональном абонентском кабинете;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>с помщью оплаты по квитанции за газ;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>ввести пин-код.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+<!-- wp:image {"align":"center","id":81,"sizeSlug":"full"} -->
+<figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2019/09/gazbrowser72-1024px.jpg" alt="лк газпром полная версия" class="wp-image-81"><figcaption class="wp-element-caption">как подключить полную версию</figcaption></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph -->
+<p>Система обеспечена защитной программой от взлома и фишинга, а также обеспечивает конфиденциальность и защиту личной информации клиентов.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Передача показаний в личном кабинете</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Передавать данные газовых счетчиков потребители должны ежемесячно до определенного числа, которое можно посмотреть в квитанции на газ. Эту операцию вы можете сделать прямо из своего абонентского кабинета на сайте Смородина⦿онлайн.рф. Сделать можно это на определенной вкладке, нужно просто ввести текущие показания  своего счетчика. Программа сама автоматически рассчитает сумму согласно тарифу вашего региона. После чего вы сможете произвести оплату за газ онлайн.</p>
+<!-- /wp:paragraph -->
+<!-- wp:image {"align":"center","id":83,"sizeSlug":"full","linkDestination":"media"} -->
+<figure class="wp-block-image aligncenter size-full"><a href="/wp-content/uploads/2019/08/gazbrowser73-1024px.jpg"><img src="/wp-content/uploads/2019/08/gazbrowser73-1024px.jpg" alt="Передать показания" class="wp-image-83"></a><figcaption class="wp-element-caption">Передать показания за газ в лк</figcaption></figure>
+<!-- /wp:image -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Оплата счетов на сайте ✔︎ Оплата по лицевому счету.</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Используйте вкладку ➤ [<strong>Лицевой счет</strong>] в абонентском кабинете Смородина, чтобы заплатить за газ. На вкладке требуется заполнить данные своей банковской карты. Вы можете подключить не одну, а несколько карт для оплаты. При оплате за газ достаточно будет выбрать нужную вам карту с которой вы хотите оплатить счет за газ.</p>
+<!-- /wp:paragraph -->
+<!-- wp:image {"align":"center","id":84,"sizeSlug":"full","linkDestination":"media"} -->
+<figure class="wp-block-image aligncenter size-full"><a href="/wp-content/uploads/2019/08/gazbrowser74-1024px.jpg"><img src="/wp-content/uploads/2019/08/gazbrowser74-1024px.jpg" alt="оплата газа" class="wp-image-84"></a><figcaption class="wp-element-caption">оплатить за газовые услуги</figcaption></figure>
+<!-- /wp:image -->
+<!-- wp:pullquote {"style":{"border":{"color":"#0693e3"}}} -->
+<figure class="wp-block-pullquote has-border-color" style="border-color:#0693e3"><blockquote><p>МойГАЗ онлайн – теперь можно платить за услуги газа быстро и легко.</p></blockquote></figure>
+<!-- /wp:pullquote -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Замена или установку счетчиков газа</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Ваши сетки сломались или вышел срок? Итак, нужно просто оформить заявку на установку/замену счетчика. Сделать это можно из дома с ноутбука/компьютера в личном кабинете Смородина. Требуется открыть вкладку [<strong>Договор</strong>], где нажать на пункт [<strong>заявка</strong>]. Откроется окно, где нужно заполнить все нужные поля, после чего нажать [<strong>отправить</strong>].</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Изменение личной информации</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center","style":{"color":{"background":"#e3edfd"}},"fontSize":"medium"} -->
+<p class="has-text-align-center has-background has-medium-font-size" style="background-color:#e3edfd">Изменить данные можно на сайте смородины⦿онлайн мой•ГАЗ на вкладке ☛[<strong>Настройки</strong>].</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p> Изменить можно такие персональные данные как:</p>
+<!-- /wp:paragraph -->
+<!-- wp:list {"ordered":true} -->
+<ol><!-- wp:list-item -->
+<li>ФИО;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>телефон;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>email;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>логин и пароль. </li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>настроить оповещения о задолженности по счету, новостях и изменения сервиса, а также возможность получения счета/квитанции на email.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+<!-- wp:image {"align":"center","id":86,"sizeSlug":"full","linkDestination":"media"} -->
+<figure class="wp-block-image aligncenter size-full"><a href="/wp-content/uploads/2019/08/gazbrowser75-1024px.jpg"><img src="/wp-content/uploads/2019/08/gazbrowser75-1024px.jpg" alt="Изменить информацию" class="wp-image-86"></a><figcaption class="wp-element-caption">форма редактирования личных данных</figcaption></figure>
+<!-- /wp:image -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Вход для региональных подразделений ЛК Газпрома</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Во всех регионах России компания Газпром-межрегионгаз открыла сайты с личными кабинетами, где вы можете перейти в нужный вам Смородина личный кабинет. Пример:</p>
+<!-- /wp:paragraph -->
+<!-- wp:list {"ordered":true} -->
+<ol><!-- wp:list-item -->
+<li><a href="http://gazmsk.ru" target="_blank" rel="noreferrer noopener nofollow">МОСГАЗ Смородина</a>;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><a href="http://sevrg.ru" target="_blank" rel="noreferrer noopener nofollow">Межрегионгаз Север филиал в ХМАО-Югре</a>;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Филиал Газпром <strong>межрегионгаз</strong> <a href="https://www.rostovregiongaz.ru" target="_blank" rel="noreferrer noopener nofollow">Ростов-на-Дону</a>;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>МежРегионГаз <a href="https://www.regiongaz.ru" target="_blank" rel="noreferrer noopener nofollow">Ставрополь</a>;</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+<!-- wp:paragraph -->
+<p>Оформление в ЛК региональных подразделений газовой компании полностью идентична описанной выше.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Как нужно заключать новые договоры на газ</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>В случае, когда в ваш дом подключается другая линия обслуживания газа, требуется оформить новое соглашение с компанией. Переключитесь на вкладку [<strong>Договоры</strong>] в ЛК на сайте СмородинаОнлайн, затем нужно включить опцию и нажать [<strong>Заключить новый договор</strong>]. Далее вам нужно брать тип нужного договора на обслуживание газа. </p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Типы обслуживания:</p>
+<!-- /wp:paragraph -->
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>поставка газа;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>ТО ВДГО;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>различные виды тех. присоединения.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+<!-- wp:paragraph -->
+<p>Выберите подходящую вам услугу нажав на её ссылку.</p>
+<!-- /wp:paragraph -->
+<!-- wp:image {"align":"center","id":119,"sizeSlug":"full","linkDestination":"media"} -->
+<figure class="wp-block-image aligncenter size-full"><a href="/wp-content/uploads/2019/09/registr-dog.jpg"><img src="/wp-content/uploads/2019/09/registr-dog.jpg" alt="доровор май-газ" class="wp-image-119" title="договор газ "></a></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph -->
+<p>Процесс заключения и оформления по шагам:</p>
+<!-- /wp:paragraph -->
+<!-- wp:list {"ordered":true} -->
+<ol><!-- wp:list-item -->
+<li>заполнение личных данных;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li> заполнение информации по объекту;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li> отправка сканов документов;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li> отправка заявки обращения;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li> обработка данных;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li> подписание документов;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li> получение лицевых счетов абонента.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Мой Газ: Мобильное приложение и ЛК с телефона</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Для удобства своих абонентов создано приложение для систем iOS и Андроид – <strong>Мой ГАЗ</strong>. Приложение содержит все необходимые функции личного кабинета Смородины•Онлайн?ГАЗ.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Скачать Мой Газ на смартфон</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Приложение создано для смартфонов на платформах Android и iОS. Скачать его можно из AppStore или Google Play. </p>
+<!-- /wp:paragraph -->
+<!-- wp:group -->
+<div class="wp-block-group" style="text-align: center; margin: 20px 0;">
+  <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&#x26;data=https://play.google.com/store/apps/details?id=ru.abrr.gas&#x26;hl=ru" alt="QR Code скачать приложение для Андроид" width="150" height="150" style="margin: 0 auto; display: block;">
+  <p style="font-size: 0.85em; color: var(--color-text-light); margin-top: 10px;">скачать приложение для Андроид</p>
+</div>
+<!-- /wp:group -->
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Скачать на iPhone | Android</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Ссылки на официальный магазин приложений для загрузки:</p>
+<!-- /wp:paragraph -->
+<!-- wp:group -->
+<div class="wp-block-group"><!-- wp:image {"id":109,"sizeSlug":"thumbnail","linkDestination":"custom"} -->
+<figure class="wp-block-image size-thumbnail"><a href="https://play.google.com/store/apps/details?id=ru.abrr.gas&#x26;hl=ru" target="_blank" rel="noreferrer noopener"><img src="/wp-content/uploads/2019/09/googleplay-icon-200x59.png" alt="скачать мойгаз" class="wp-image-109"></a></figure>
+<!-- /wp:image -->
+<!-- wp:image {"id":110,"sizeSlug":"thumbnail","linkDestination":"custom"} -->
+<figure class="wp-block-image size-thumbnail"><a href="https://apps.apple.com/lb/app/мой-газ/id1220406502" target="_blank" rel="noreferrer noopener"><img src="/wp-content/uploads/2019/09/appstore-icon-1-200x59.png" alt="скачать приложение" class="wp-image-110"></a></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+<!-- wp:group -->
+<div class="app-screenshots-gallery">
+  <img src="/wp-content/uploads/2019/09/460x0w.jpg" alt="Мой Газ скриншот 1">
+  <img src="/wp-content/uploads/2019/09/460x0w-1.jpg" alt="Мой Газ скриншот 2">
+  <img src="/wp-content/uploads/2019/09/460x0w-2.jpg" alt="Мой Газ скриншот 3">
+  <img src="/wp-content/uploads/2019/09/460x0w-3.jpg" alt="Мой Газ скриншот 4">
+  <img src="/wp-content/uploads/2019/09/460x0w-4.jpg" alt="Мой Газ скриншот 5">
+  <img src="/wp-content/uploads/2019/09/460x0w-5.jpg" alt="Мой Газ скриншот 6">
+  <img src="/wp-content/uploads/2019/09/460x0w-6.jpg" alt="Мой Газ скриншот 7">
+  <img src="/wp-content/uploads/2019/09/460x0w-7.jpg" alt="Мой Газ скриншот 8">
+  <img src="/wp-content/uploads/2019/09/460x0w-8.jpg" alt="Мой Газ скриншот 9">
+  <img src="/wp-content/uploads/2019/09/460x0w-10.jpg" alt="Мой Газ скриншот 10">
+</div>
+<!-- /wp:group -->
+<!-- wp:paragraph -->
+<p>Для того, чтобы войти в личный кабинет МойГАЗ на смартфоне требуется загрузить приложение, произвести установку и  оформить регистрацию если у вас нет учетной записи. В случае если у вас уже есть абонентский кабинет то следует использовать логин и пароль для входа в приложение, последовательно выполняя инструкции мобильного приложения</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Шаги по регистрации в Смородине ЛК подробно описаны выше.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Техническая поддержка службы Мой Газ ?Смородина</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Тех-служба Мой Газ Смородина поможет решить любые ваши вопросы касаемые обслуживания газового оборудования. </p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Когда у вас возникли следующие вопросы:</p>
+<!-- /wp:paragraph -->
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>как войти в свой личный кабинет? </li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>узнать задолженность за услуги газа?</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>как подать заявление на замену или установку счетчиков газа? </li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+<!-- wp:paragraph -->
+<p>просто задайте их на сайте в окне обратной связи.</p>
+<!-- /wp:paragraph -->
+<!-- wp:list {"ordered":true} -->
+<ol><!-- wp:list-item -->
+<li>укажите своё ФИО [фамилию, имя, отчество];</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>заполнить поле – e-mail для связи;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>добавить номер телефона для связи в международном формате;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>описать проблему или вопрос;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>приложить ?фотографии, сканы документов, необходимых для обращения;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li> отправить форму ➤ нажатием соответствующей кнопки.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+<!-- wp:quote {"className":"article-blockquote-2"} -->
+<blockquote class="wp-block-quote article-blockquote-2"><!-- wp:paragraph -->
+<p>При появлении финансовых вопросов, ошибок начисления за газовые услуги – просто обратитесь напрямую в ближайшее отделение газпрома, которое можно найти в разделе [Абонентские пункты].</p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+<!-- wp:paragraph -->
+<p>Другой способ получения помощи и информации можно перейдя на вкладку [<strong>Обратная связь</strong>] в персональном кабинете.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Карта отделений и филиалов</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Для решения проблемы не связанной с деньгами следует обратиться не в главный офис «Газпром Межрегионгаза», а сразу в ближайший филиал регионгаза. </p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Найти отделение газовой компании ближайшее к вам можно на карте в меню [<strong>Абонентские пункты</strong>].  Выбрав один из пунктов, вы сможете узнать его телефон и адрес, а также время работы и приемные часы для населения. На карте показаны ближайшие к клиенту отделения. Более того, вы сможете прямо с сайта отправить сообщение в определенный офис обслуживания населения.</p>
+<!-- /wp:paragraph -->
+<!-- wp:image {"align":"center","id":105,"sizeSlug":"full","linkDestination":"media"} -->
+<figure class="wp-block-image aligncenter size-full"><a href="/wp-content/uploads/2019/08/gaz_maps.jpg"><img src="/wp-content/uploads/2019/08/gaz_maps.jpg" alt="https://mojgaz.ru пункты за газ" class="wp-image-105"></a></figure>
+<!-- /wp:image -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Отзывы о системе Газпрома Смородина онлайн</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Сервис онлайн-офиса Газпром Смородина Мой ГАЗ удобен  и прост в  использовании, но тем не менее иногда происходят технические сбои. Иногда нужно почистить кеш браузера, а также подождать если идут технические работы. А также вы можете написать в комментариях ниже проблемы с которыми вы столкнулись.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Пользователи выявляют некоторые проблемы:</h4>
+<!-- /wp:heading -->
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>трудность при получении короткого кода при регистрации;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>проблема авторизации личного кабинета; </li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>не прошла оплата за газ;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>трудности при внесении показаний счетчика;</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>не сод привязать карту к мой газ.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Проблемы со входом</h4>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Если вы столкнулись с проблемой входа  аккаунт, то не стоит переживать, в основном дело в технической проблеме сервера мойгаз-смородины. Просто обратитесь в тех.отдел на сайте или непосредственно в офис межрегионгаз.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"align":"left","style":{"color":{"background":"#dff9e5"}},"fontSize":"medium"} -->
+<p class="has-text-align-left has-background has-medium-font-size" style="background-color:#dff9e5">Если у вас проблема с оплатой или начислениями, пожалуйста обратитесь непосредственно в официальную службу поддержки. Для этого перейдите на официальный сайт и нажмите — <em><strong>Задать вопрос в техническую поддержку</strong></em> либо напишите электронным письмом на адрес <strong><em>support@смородина.онлайн</em></strong> с указанием Вашего лицевого счета и региона, в теме письма укажите «Газ ЛКК».</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"align":"center","style":{"color":{"background":"#e3edfd"}},"fontSize":"medium"} -->
+<p class="has-text-align-center has-background has-medium-font-size" style="background-color:#e3edfd">У вас остались вопросы по поводу инструкции пользования личным кабинетом? Оставьте свой комментарий ниже мы обязательно вам ответим.</p>
+<!-- /wp:paragraph -->
+<!-- wp:spacer {"height":"50px"} -->
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+<!-- wp:tag-cloud /--> </div> <div class="related-posts-section mt-12" data-astro-cid-yvbahnfj> <h2 class="related-heading" data-astro-cid-yvbahnfj>Читайте также</h2> <div class="posts-grid" data-astro-cid-yvbahnfj> <a href="/gazovyy-schetchik-kvartire/" class="post-card" data-astro-cid-yvbahnfj> <div class="post-image" data-astro-cid-yvbahnfj> <img src="/wp-content/uploads/mojgaz_ru.jpg" alt="Газовый счетчик  квартире нужен или нет?" loading="lazy" data-astro-cid-yvbahnfj> </div> <div class="post-info" data-astro-cid-yvbahnfj> <h3 class="post-name" data-astro-cid-yvbahnfj>Газовый счетчик  квартире нужен или нет?</h3> <div class="post-date" data-astro-cid-yvbahnfj> 12 августа 2021 г. </div> </div> </a><a href="/kakaya-norma-temperatury-otopleniya-dolzhna-byt-v-kvartire-zimoy-esli-holodnye-batarei-v-kvartire/" class="post-card" data-astro-cid-yvbahnfj> <div class="post-image" data-astro-cid-yvbahnfj> <img src="/wp-content/uploads/2.jpg" alt="Какая норма температуры отопления должна быть в квартире зимой, если холодные батареи в квартире" loading="lazy" data-astro-cid-yvbahnfj> </div> <div class="post-info" data-astro-cid-yvbahnfj> <h3 class="post-name" data-astro-cid-yvbahnfj>Какая норма температуры отопления должна быть в квартире зимой, если холодные батареи в квартире</h3> <div class="post-date" data-astro-cid-yvbahnfj> 24 ноября 2021 г. </div> </div> </a><a href="/peredat-pokazaniya/" class="post-card" data-astro-cid-yvbahnfj>  <div class="post-info" data-astro-cid-yvbahnfj> <h3 class="post-name" data-astro-cid-yvbahnfj>Передать показания</h3> <div class="post-date" data-astro-cid-yvbahnfj> 25 августа 2019 г. </div> </div> </a> </div> </div> <footer class="article-footer" data-astro-cid-yvbahnfj> <a href="/all-post/" class="back-link" data-astro-cid-yvbahnfj>&larr; Все статьи</a> </footer> </div> </div> </article>  </main> <footer class="footer" data-astro-cid-sz7xmlte> <div class="container" data-astro-cid-sz7xmlte> <div class="footer-grid" data-astro-cid-sz7xmlte> <div class="footer-brand" data-astro-cid-sz7xmlte> <a href="/" class="logo" data-astro-cid-sz7xmlte> <img src="/logo.png" alt="Мой Газ" class="logo-img" width="32" height="32" data-astro-cid-sz7xmlte> <span class="logo-text" data-astro-cid-sz7xmlte>Мой<span class="logo-highlight" data-astro-cid-sz7xmlte>Газ</span></span> </a> <p class="footer-desc" data-astro-cid-sz7xmlte>Информационный портал для потребителей ЖКХ, ЖКУ и Газа. Все о счетчиках, нормативах и законодательстве просто и понятно.</p> </div> <div class="footer-links-group" data-astro-cid-sz7xmlte> <h4 class="footer-heading" data-astro-cid-sz7xmlte>Информация</h4> <ul class="footer-links" data-astro-cid-sz7xmlte> <li data-astro-cid-sz7xmlte><a href="/all-post" data-astro-cid-sz7xmlte>Все статьи</a></li> <li data-astro-cid-sz7xmlte><a href="/komp" data-astro-cid-sz7xmlte>Каталог компаний</a></li> </ul> </div> <div class="footer-links-group" data-astro-cid-sz7xmlte> <h4 class="footer-heading" data-astro-cid-sz7xmlte>Документы</h4> <ul class="footer-links" data-astro-cid-sz7xmlte> <li data-astro-cid-sz7xmlte><a href="/politika-konfidentsialnosti/" data-astro-cid-sz7xmlte>Политика конфиденциальности</a></li> <li data-astro-cid-sz7xmlte><a href="/soglasie/" data-astro-cid-sz7xmlte>Согласие Пользователя</a></li> <li data-astro-cid-sz7xmlte><a href="/kontakty/" data-astro-cid-sz7xmlte>Контакты</a></li> </ul> </div> </div> <div class="footer-bottom" data-astro-cid-sz7xmlte> <p data-astro-cid-sz7xmlte>&copy; 2026 Мой Газ. Все права защищены.</p> </div> </div> </footer>  </div> </body> </html> 

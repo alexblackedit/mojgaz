@@ -1,0 +1,138 @@
+<!DOCTYPE html><html lang="ru"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" type="image/x-icon" href="/favicon.ico"><meta name="generator" content="Astro v5.17.3"><title>Компании ЖКХ: Ардатов, Республика Мордовия | Мой Газ</title><meta name="description" content="Справочник газовых компаний ЖКХ — Ардатов (Республика Мордовия). Адреса, телефоны, отзывы, рейтинг. Данные обновляются ежедневно."><!-- Open Graph/SEO --><meta property="og:title" content="Компании ЖКХ: Ардатов, Республика Мордовия | Мой Газ"><meta property="og:description" content="Справочник газовых компаний ЖКХ — Ардатов (Республика Мордовия). Адреса, телефоны, отзывы, рейтинг. Данные обновляются ежедневно."><meta property="og:type" content="website"><meta property="og:site_name" content="Мой Газ"><!-- Yandex.Metrika counter --><script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        ((k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a));
+      })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js?id=90372986", "ym");
+      ym(90372986, "init", {
+        clickmap: true,
+        referrer: document.referrer,
+        url: location.href,
+        accurateTrackBounce: true,
+        trackLinks: true,
+      });
+    </script><noscript><div><img src="https://mc.yandex.ru/watch/90372986" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --><!-- Место для вашего скрипта рекламы --><script>
+  (async function () {
+    // Строка инициализации контекста для Яндекса
+    const contextCbScript = document.createElement("script");
+    contextCbScript.text = "window.yaContextCb = window.yaContextCb || [];";
+    document.head.appendChild(contextCbScript);
+
+    const headerBiddingScript = document.createElement("script");
+    headerBiddingScript.src = "https://yandex.ru/ads/system/header-bidding.js";
+    headerBiddingScript.async = true;
+    document.head.appendChild(headerBiddingScript);
+
+    const contextScript = document.createElement("script");
+    contextScript.src = "https://yandex.ru/ads/system/context.js";
+    contextScript.async = true;
+    document.head.appendChild(contextScript);
+
+    const loadScript = (src, opts = {}) => {
+      const s = document.createElement("script");
+      s.src = src;
+      if (opts.async) s.async = true;
+      if (opts.defer) s.defer = true;
+      if (opts.crossOrigin) s.crossOrigin = opts.crossOrigin;
+      document.head.appendChild(s);
+    };
+
+    // Загружаем необходимые библиотеки
+    loadScript("/js/ads-hb-config.js", { defer: true });
+    loadScript("https://ad.mail.ru/static/ads-async.js", { async: true });
+    loadScript("https://news.2xclock.com/loader.min.js", { async: true, crossOrigin: "use-credentials" });
+
+    // Функция создания рекламного контейнера и ДОБАВЛЕНИЯ ЕГО СКРИПТА В ДОМ
+    const createAdBlock = (id, params, target, position = "after") => {
+      if (document.getElementById(id)) return;
+
+      const adDiv = document.createElement("div");
+      adDiv.id = id;
+      adDiv.className = "adfox-article-block my-8 flex justify-center w-full min-h-[250px] not-prose";
+
+      if (position === "prepend") target.prepend(adDiv);
+      else if (position === "append" || position === "end") target.append(adDiv);
+      else if (position === "before") target.before(adDiv);
+      else target.after(adDiv);
+
+      // Генерируем исполняемый скрипт
+      const scriptEl = document.createElement("script");
+      scriptEl.textContent = `
+        window.yaContextCb.push(() => {
+          Ya.adfoxCode.create({
+            ownerId: 281876,
+            containerId: '${id}',
+            params: ${JSON.stringify(params)}
+          });
+        });
+      `;
+      // Вставляем ровно после div'a
+      adDiv.insertAdjacentElement("afterend", scriptEl);
+    };
+
+    // Логика автоматической расстановки блоков в контенте
+    const insertInArticleAds = () => {
+      const articleContent = document.querySelector(".article-content");
+      const companyLayout = document.querySelector(".company-layout");
+      const company_article = document.querySelector(".company-description");
+
+      // Ищем блок "Читайте также" или "Другие компании" (оба имеют класс .related-posts-section или .related-companies-section)
+      // Для универсальности ищем по атрибуту class^="related-" или конкретно:
+      const relatedSection = document.querySelector(".related-posts-section, .related-companies-section");
+
+      if (articleContent) {
+        // Блок в начале статьи
+        createAdBlock("adfox_block_1", { pp: "g", ps: "gggj", p2: "ibgn" }, articleContent, "prepend");
+      }
+
+      if (companyLayout) {
+        // В компаниях первый блок выводится после company-layout на том же уровне
+        createAdBlock("adfox_block_1", { pp: "g", ps: "gggj", p2: "ibgn" }, company_article, "end");
+      }
+
+      if (relatedSection) {
+        // Второй блок перед блоком related (как в статьях, так и в компаниях)
+        createAdBlock("adfox_block_2", { pp: "h", ps: "gggj", p2: "ibgn" }, relatedSection, "before");
+      } else if (articleContent) {
+        // Фолбэк для статей без related
+        createAdBlock("adfox_block_2", { pp: "h", ps: "gggj", p2: "ibgn" }, articleContent, "append");
+      }
+    };
+
+    const initAds = () => {
+      setTimeout(insertInArticleAds, 200);
+    };
+
+    // Ждем готовности DOM
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initAds);
+    } else {
+      initAds();
+    }
+  })();
+</script> <style>
+  [id^="adfox_block_"] {
+    display: inline-block;
+    width: 100%;
+    min-height: 250px;
+    background: rgb(228, 233, 246);
+    margin: 10px auto;
+  }
+</style><link rel="stylesheet" href="/assets/kontakty.BsMog8uo.css">
+<style>.breadcrumb[data-astro-cid-nfm44mih]{font-size:.875rem;color:var(--color-text-light);margin-bottom:1.5rem}.breadcrumb[data-astro-cid-nfm44mih] a[data-astro-cid-nfm44mih]{color:var(--color-primary)}.breadcrumb[data-astro-cid-nfm44mih] a[data-astro-cid-nfm44mih]:hover{text-decoration:underline}.page-header[data-astro-cid-nfm44mih]{margin-bottom:2rem}.page-title[data-astro-cid-nfm44mih]{font-size:2.2rem;margin-bottom:.75rem}.page-subtitle[data-astro-cid-nfm44mih]{font-size:1.05rem;color:var(--color-text-light);margin:0;line-height:1.6}.companies-grid[data-astro-cid-nfm44mih]{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.25rem;margin-bottom:2rem}.company-card[data-astro-cid-nfm44mih]{background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1.25rem;display:flex;gap:1rem;align-items:flex-start;transition:all .25s;color:var(--color-text)}.company-card[data-astro-cid-nfm44mih]:hover{border-color:var(--color-primary);box-shadow:var(--shadow-md);transform:translateY(-2px)}.company-icon[data-astro-cid-nfm44mih]{font-size:1.75rem;flex-shrink:0}.company-info[data-astro-cid-nfm44mih]{flex:1;min-width:0}.company-name[data-astro-cid-nfm44mih]{font-size:1rem;font-weight:700;margin-bottom:.4rem;line-height:1.3}.company-line[data-astro-cid-nfm44mih]{font-size:.825rem;color:var(--color-text-light);margin-bottom:.2rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.company-service[data-astro-cid-nfm44mih]{color:var(--color-primary);font-weight:500}.company-arrow[data-astro-cid-nfm44mih]{color:var(--color-text-light);flex-shrink:0;align-self:center;font-size:1.25rem;transition:transform .2s}.company-card[data-astro-cid-nfm44mih]:hover .company-arrow[data-astro-cid-nfm44mih]{transform:translate(4px);color:var(--color-primary)}.pagination-stub[data-astro-cid-nfm44mih]{margin-top:2rem}.more-note[data-astro-cid-nfm44mih]{font-size:.9rem;color:var(--color-text-light)}.mt-4[data-astro-cid-nfm44mih]{margin-top:1.5rem}.mt-3[data-astro-cid-nfm44mih]{margin-top:1rem}
+</style></head> <body> <div class="page-wrapper"> <header class="header" data-astro-cid-3ef6ksr2> <div class="container" data-astro-cid-3ef6ksr2> <div class="header-inner" data-astro-cid-3ef6ksr2> <a href="/" class="logo" data-astro-cid-3ef6ksr2> <img src="/logo.png" alt="Мой Газ" class="logo-img" width="32" height="32" data-astro-cid-3ef6ksr2> <span class="logo-text" data-astro-cid-3ef6ksr2>Мой<span class="logo-highlight" data-astro-cid-3ef6ksr2>Газ</span></span> </a> <nav class="nav" data-astro-cid-3ef6ksr2> <ul class="nav-list" data-astro-cid-3ef6ksr2> <li data-astro-cid-3ef6ksr2><a href="/" class="nav-link" data-astro-cid-3ef6ksr2>Главная</a></li> <li data-astro-cid-3ef6ksr2><a href="/all-post" class="nav-link" data-astro-cid-3ef6ksr2>Все записи</a></li> <li data-astro-cid-3ef6ksr2><a href="/komp" class="nav-link" data-astro-cid-3ef6ksr2>Компании</a></li> </ul> </nav> <div class="header-actions" data-astro-cid-3ef6ksr2> <a href="/kontakty" class="btn btn-primary btn-sm" data-astro-cid-3ef6ksr2>Связаться</a> </div> </div> </div> </header>  <main class="main-content">  <section class="section" data-astro-cid-nfm44mih> <div class="container" data-astro-cid-nfm44mih> <div class="breadcrumb" data-astro-cid-nfm44mih> <a href="/" data-astro-cid-nfm44mih>Главная</a> /
+<a href="/komp/" data-astro-cid-nfm44mih>Компании</a> /
+<a href="/lands/respublika-mordoviya/" data-astro-cid-nfm44mih>Республика Мордовия</a> /
+<span data-astro-cid-nfm44mih>Ардатов</span> </div> <div class="page-header" data-astro-cid-nfm44mih> <h1 class="page-title" data-astro-cid-nfm44mih>Ардатов</h1> <p class="page-subtitle" data-astro-cid-nfm44mih>
+Компании ЖКХ и коммунальные службы — Ардатов (Республика Мордовия).<br data-astro-cid-nfm44mih>
+Указаны адреса, телефоны, время работы.
+</p> </div> <div class="companies-grid mt-4" data-astro-cid-nfm44mih> <a href="/komp/gazprom-gazoraspredelenie-saransk-filial-v-g-ardatove-ardatov/" class="company-card" data-astro-cid-nfm44mih> <div class="company-icon" data-astro-cid-nfm44mih>🏢</div> <div class="company-info" data-astro-cid-nfm44mih> <h3 class="company-name" data-astro-cid-nfm44mih>Газпром газораспределение Саранск, филиал в г. Ардатове</h3> <div class="company-line" data-astro-cid-nfm44mih>📍 Советская ул., 19, Ардатов</div> <div class="company-line" data-astro-cid-nfm44mih>📞 +7 (83431) 3-26-48</div>  <div class="company-line" data-astro-cid-nfm44mih>🕐 пн-чт 08:00–17:00, перерыв 12:00–12:48; пт 08:00–16:00, перерыв 12:00–12:48</div> </div> <div class="company-arrow" data-astro-cid-nfm44mih>→</div> </a><a href="/komp/gazprom-mezhregiongaz-territorialnyj-uchastok-g-ardatov-ardatov/" class="company-card" data-astro-cid-nfm44mih> <div class="company-icon" data-astro-cid-nfm44mih>🏢</div> <div class="company-info" data-astro-cid-nfm44mih> <h3 class="company-name" data-astro-cid-nfm44mih>Газпром межрегионгаз, территориальный участок г. Ардатов</h3> <div class="company-line" data-astro-cid-nfm44mih>📍 Советская ул., 19, Ардатов</div>   <div class="company-line" data-astro-cid-nfm44mih>🕐 пн-пт 08:30–17:30, перерыв 13:00–13:45</div> </div> <div class="company-arrow" data-astro-cid-nfm44mih>→</div> </a> </div>  </div> </section>  </main> <footer class="footer" data-astro-cid-sz7xmlte> <div class="container" data-astro-cid-sz7xmlte> <div class="footer-grid" data-astro-cid-sz7xmlte> <div class="footer-brand" data-astro-cid-sz7xmlte> <a href="/" class="logo" data-astro-cid-sz7xmlte> <img src="/logo.png" alt="Мой Газ" class="logo-img" width="32" height="32" data-astro-cid-sz7xmlte> <span class="logo-text" data-astro-cid-sz7xmlte>Мой<span class="logo-highlight" data-astro-cid-sz7xmlte>Газ</span></span> </a> <p class="footer-desc" data-astro-cid-sz7xmlte>Информационный портал для потребителей ЖКХ, ЖКУ и Газа. Все о счетчиках, нормативах и законодательстве просто и понятно.</p> </div> <div class="footer-links-group" data-astro-cid-sz7xmlte> <h4 class="footer-heading" data-astro-cid-sz7xmlte>Информация</h4> <ul class="footer-links" data-astro-cid-sz7xmlte> <li data-astro-cid-sz7xmlte><a href="/all-post" data-astro-cid-sz7xmlte>Все статьи</a></li> <li data-astro-cid-sz7xmlte><a href="/komp" data-astro-cid-sz7xmlte>Каталог компаний</a></li> </ul> </div> <div class="footer-links-group" data-astro-cid-sz7xmlte> <h4 class="footer-heading" data-astro-cid-sz7xmlte>Документы</h4> <ul class="footer-links" data-astro-cid-sz7xmlte> <li data-astro-cid-sz7xmlte><a href="/politika-konfidentsialnosti/" data-astro-cid-sz7xmlte>Политика конфиденциальности</a></li> <li data-astro-cid-sz7xmlte><a href="/soglasie/" data-astro-cid-sz7xmlte>Согласие Пользователя</a></li> <li data-astro-cid-sz7xmlte><a href="/kontakty/" data-astro-cid-sz7xmlte>Контакты</a></li> </ul> </div> </div> <div class="footer-bottom" data-astro-cid-sz7xmlte> <p data-astro-cid-sz7xmlte>&copy; 2026 Мой Газ. Все права защищены.</p> </div> </div> </footer>  </div> </body> </html> 
