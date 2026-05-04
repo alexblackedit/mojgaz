@@ -1,0 +1,160 @@
+<!DOCTYPE html><html lang="ru"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" type="image/x-icon" href="/favicon.ico"><meta name="generator" content="Astro v5.17.3"><title>Согласие Пользователя Сайта на обработку персональных данных</title><meta name="description" content="Согласие Пользователя Сайта на обработку персональных данных портала Мой Газ"><!-- Open Graph/SEO --><meta property="og:title" content="Согласие Пользователя Сайта на обработку персональных данных"><meta property="og:description" content="Согласие Пользователя Сайта на обработку персональных данных портала Мой Газ"><meta property="og:type" content="website"><meta property="og:site_name" content="Мой Газ"><!-- Yandex.Metrika counter --><script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        ((k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a));
+      })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js?id=90372986", "ym");
+      ym(90372986, "init", {
+        clickmap: true,
+        referrer: document.referrer,
+        url: location.href,
+        accurateTrackBounce: true,
+        trackLinks: true,
+      });
+    </script><link rel="stylesheet" href="/assets/kontakty.BsMog8uo.css">
+<style>.markdown-section{padding:3rem 0}.markdown-container{max-width:800px;margin:0 auto;background:#fff;padding:2.5rem 3rem;border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);border:1px solid var(--color-border)}.breadcrumb{font-size:.875rem;color:var(--color-text-light);margin-bottom:2rem}.breadcrumb a{color:var(--color-primary)}.breadcrumb a:hover{text-decoration:underline}.markdown-content{font-size:1.05rem;line-height:1.7;color:var(--color-text)}.markdown-content h1{font-size:2.2rem;margin-bottom:1.5rem;line-height:1.3;color:var(--color-heading)}.markdown-content h2{font-size:1.5rem;margin-top:2rem;margin-bottom:1rem;color:var(--color-heading);border-bottom:1px solid var(--color-border);padding-bottom:.5rem}.markdown-content h3{font-size:1.25rem;margin-top:1.5rem;margin-bottom:1rem;color:var(--color-heading)}.markdown-content p{margin-bottom:1.25rem}.markdown-content ul,.markdown-content ol{margin-bottom:1.25rem;padding-left:1.5rem}.markdown-content li{margin-bottom:.5rem}.markdown-content a{color:var(--color-primary);text-decoration:underline}.markdown-content a:hover{text-decoration:none}@media(max-width:768px){.markdown-container{padding:1.5rem;border-radius:0;border-left:none;border-right:none}.markdown-content h1{font-size:1.8rem}}
+</style><noscript><div><img src="https://mc.yandex.ru/watch/90372986" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --><!-- Место для вашего скрипта рекламы --><script>
+  (async function () {
+    // Строка инициализации контекста для Яндекса
+    const contextCbScript = document.createElement("script");
+    contextCbScript.text = "window.yaContextCb = window.yaContextCb || [];";
+    document.head.appendChild(contextCbScript);
+
+    const headerBiddingScript = document.createElement("script");
+    headerBiddingScript.src = "https://yandex.ru/ads/system/header-bidding.js";
+    headerBiddingScript.async = true;
+    document.head.appendChild(headerBiddingScript);
+
+    const contextScript = document.createElement("script");
+    contextScript.src = "https://yandex.ru/ads/system/context.js";
+    contextScript.async = true;
+    document.head.appendChild(contextScript);
+
+    const loadScript = (src, opts = {}) => {
+      const s = document.createElement("script");
+      s.src = src;
+      if (opts.async) s.async = true;
+      if (opts.defer) s.defer = true;
+      if (opts.crossOrigin) s.crossOrigin = opts.crossOrigin;
+      document.head.appendChild(s);
+    };
+
+    // Загружаем необходимые библиотеки
+    loadScript("/js/ads-hb-config.js", { defer: true });
+    loadScript("https://ad.mail.ru/static/ads-async.js", { async: true });
+    loadScript("https://news.2xclock.com/loader.min.js", { async: true, crossOrigin: "use-credentials" });
+
+    // Функция создания рекламного контейнера и ДОБАВЛЕНИЯ ЕГО СКРИПТА В ДОМ
+    const createAdBlock = (id, params, target, position = "after") => {
+      if (document.getElementById(id)) return;
+
+      const adDiv = document.createElement("div");
+      adDiv.id = id;
+      adDiv.className = "adfox-article-block my-8 flex justify-center w-full min-h-[250px] not-prose";
+
+      if (position === "prepend") target.prepend(adDiv);
+      else if (position === "append" || position === "end") target.append(adDiv);
+      else if (position === "before") target.before(adDiv);
+      else target.after(adDiv);
+
+      // Генерируем исполняемый скрипт
+      const scriptEl = document.createElement("script");
+      scriptEl.textContent = `
+        window.yaContextCb.push(() => {
+          Ya.adfoxCode.create({
+            ownerId: 281876,
+            containerId: '${id}',
+            params: ${JSON.stringify(params)}
+          });
+        });
+      `;
+      // Вставляем ровно после div'a
+      adDiv.insertAdjacentElement("afterend", scriptEl);
+    };
+
+    // Логика автоматической расстановки блоков в контенте
+    const insertInArticleAds = () => {
+      const articleContent = document.querySelector(".article-content");
+      const companyLayout = document.querySelector(".company-layout");
+      const company_article = document.querySelector(".company-description");
+
+      // Ищем блок "Читайте также" или "Другие компании" (оба имеют класс .related-posts-section или .related-companies-section)
+      // Для универсальности ищем по атрибуту class^="related-" или конкретно:
+      const relatedSection = document.querySelector(".related-posts-section, .related-companies-section");
+
+      if (articleContent) {
+        // Блок в начале статьи
+        createAdBlock("adfox_block_1", { pp: "g", ps: "gggj", p2: "ibgn" }, articleContent, "prepend");
+      }
+
+      if (companyLayout) {
+        // В компаниях первый блок выводится после company-layout на том же уровне
+        createAdBlock("adfox_block_1", { pp: "g", ps: "gggj", p2: "ibgn" }, company_article, "end");
+      }
+
+      if (relatedSection) {
+        // Второй блок перед блоком related (как в статьях, так и в компаниях)
+        createAdBlock("adfox_block_2", { pp: "h", ps: "gggj", p2: "ibgn" }, relatedSection, "before");
+      } else if (articleContent) {
+        // Фолбэк для статей без related
+        createAdBlock("adfox_block_2", { pp: "h", ps: "gggj", p2: "ibgn" }, articleContent, "append");
+      }
+    };
+
+    const initAds = () => {
+      setTimeout(insertInArticleAds, 200);
+    };
+
+    // Ждем готовности DOM
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initAds);
+    } else {
+      initAds();
+    }
+  })();
+</script> <style>
+  [id^="adfox_block_"] {
+    display: inline-block;
+    width: 100%;
+    min-height: 250px;
+    background: rgb(228, 233, 246);
+    margin: 10px auto;
+  }
+</style></head> <body> <div class="page-wrapper"> <header class="header" data-astro-cid-3ef6ksr2> <div class="container" data-astro-cid-3ef6ksr2> <div class="header-inner" data-astro-cid-3ef6ksr2> <a href="/" class="logo" data-astro-cid-3ef6ksr2> <img src="/logo.png" alt="Мой Газ" class="logo-img" width="32" height="32" data-astro-cid-3ef6ksr2> <span class="logo-text" data-astro-cid-3ef6ksr2>Мой<span class="logo-highlight" data-astro-cid-3ef6ksr2>Газ</span></span> </a> <nav class="nav" data-astro-cid-3ef6ksr2> <ul class="nav-list" data-astro-cid-3ef6ksr2> <li data-astro-cid-3ef6ksr2><a href="/" class="nav-link" data-astro-cid-3ef6ksr2>Главная</a></li> <li data-astro-cid-3ef6ksr2><a href="/all-post" class="nav-link" data-astro-cid-3ef6ksr2>Все записи</a></li> <li data-astro-cid-3ef6ksr2><a href="/komp" class="nav-link" data-astro-cid-3ef6ksr2>Компании</a></li> </ul> </nav> <div class="header-actions" data-astro-cid-3ef6ksr2> <a href="/kontakty" class="btn btn-primary btn-sm" data-astro-cid-3ef6ksr2>Связаться</a> </div> </div> </div> </header>  <main class="main-content">  <section class="section markdown-section"> <div class="container markdown-container"> <div class="breadcrumb"> <a href="/">Главная</a> /
+<span>Согласие Пользователя Сайта на обработку персональных данных</span> </div> <div class="markdown-content"> <h1 id="согласие-пользователя-сайта-на-обработку-персональных-данных">Согласие Пользователя Сайта на обработку персональных данных</h1>
+<h2 id="1-термины-и-определения">1. ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ</h2>
+<p><strong>Согласие</strong> – настоящее согласие Пользователя Сайта на обработку персональных данных.</p>
+<p><strong>Сайт</strong> – mojgaz.ru, расположенный по адресу в сети «Интернет» <a href="https://mojgaz.ru">https://mojgaz.ru</a>.</p>
+<p><strong>Пользователь Сайта</strong> – субъект персональных данных или (в случае недееспособности субъекта персональных данных) его законный представитель, предоставляющие Оператору посредством совершения ряда действий технического характера в соответствующей части графического пользовательского интерфейса Сайта свои персональные данные или персональные данные представляемого лица соответственно.</p>
+<p><strong>Запрос</strong> – адресованное Сайту поручение Пользователя, направляемое посредством совершения Пользователем ряда действий технического характера в соответствующей части графического пользовательского интерфейса Сайта.</p>
+<p>Нераскрытые в настоящем разделе согласия субъекта на обработку его персональных данных термины следует понимать в значении, установленном для них Федеральным законом от 27.07.2006 N 152-ФЗ “О персональных данных”.</p>
+<h2 id="2-условия-на-которых-пользователем-сайта-предоставляется-согласие">2. УСЛОВИЯ, НА КОТОРЫХ ПОЛЬЗОВАТЕЛЕМ САЙТА ПРЕДОСТАВЛЯЕТСЯ СОГЛАСИЕ</h2>
+<p>Настоящим Пользователь Сайта, отправивший посредством графического пользовательского интерфейса Сайта форму, в рамках которой им предоставляются какие-либо персональные данные, свободно, своей волей и в своём интересе предоставляет Сайту конкретное, информированное и сознательное Согласие на нижеуказанных условиях:</p>
+<p><strong>Цель обработки персональных данных</strong>: исполнение Сайтом Запроса, в рамках которого Пользователем предоставляются персональные данные.</p>
+<p><strong>Перечень персональных данных, на обработку которых дается Согласие</strong>: Согласие предоставлено Пользователем на обработку тех персональных данных, которые предоставлены им при заполнении полей Запроса.</p>
+<p><strong>Перечень действий с персональными данными, на совершение которых дается Согласие</strong>:</p>
+<ul>
+<li>сбор, запись, систематизация, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, обезличивание, блокирование, удаление, уничтожение персональных данных.</li>
+</ul>
+<p><strong>Общее описание используемых Сайтом способов обработки персональных данных</strong>:</p>
+<ul>
+<li>неавтоматизированная обработка персональных данных;</li>
+<li>автоматизированная обработка персональных данных, в том числе с передачей и без передачи по сети «Интернет», смешанная обработка персональных данных.</li>
+</ul>
+<h2 id="3-порядок-отзыва-согласия">3. ПОРЯДОК ОТЗЫВА СОГЛАСИЯ</h2>
+<p>Согласие действует в течение двух календарных лет и может быть отозвано в любой момент путем направления Пользователем Сайта соответствующего заявления Оператору на адрес электронного почтового ящика: <a href="mailto:webmaster@mojgaz.ru">webmaster@mojgaz.ru</a>. Согласие считается отозванным в течение 7 (семи) рабочих дней с даты поступления Оператору указанного заявления.</p>
+<h2 id="4-заключительные-положения">4. ЗАКЛЮЧИТЕЛЬНЫЕ ПОЛОЖЕНИЯ</h2>
+<p>Настоящим Пользователь Сайта подтверждает, что:</p>
+<ul>
+<li>он является субъектом предоставленных Сайту персональных данных, а в случае, если субъект предоставленных Сайту персональных данных не является дееспособным лицом – что он является законным представителем субъекта персональных данных;</li>
+<li>он ознакомлен с правами и обязанностями субъекта персональных данных, предоставленными ему в соответствии с Федеральным законом от 27.07.2006 N 152-ФЗ “О персональных данных”, а также с <a href="/politika-konfidentsialnosti/">Политикой организации в отношении обработки персональных данных</a>.</li>
+</ul> </div> </div> </section>  </main> <footer class="footer" data-astro-cid-sz7xmlte> <div class="container" data-astro-cid-sz7xmlte> <div class="footer-grid" data-astro-cid-sz7xmlte> <div class="footer-brand" data-astro-cid-sz7xmlte> <a href="/" class="logo" data-astro-cid-sz7xmlte> <img src="/logo.png" alt="Мой Газ" class="logo-img" width="32" height="32" data-astro-cid-sz7xmlte> <span class="logo-text" data-astro-cid-sz7xmlte>Мой<span class="logo-highlight" data-astro-cid-sz7xmlte>Газ</span></span> </a> <p class="footer-desc" data-astro-cid-sz7xmlte>Информационный портал для потребителей ЖКХ, ЖКУ и Газа. Все о счетчиках, нормативах и законодательстве просто и понятно.</p> </div> <div class="footer-links-group" data-astro-cid-sz7xmlte> <h4 class="footer-heading" data-astro-cid-sz7xmlte>Информация</h4> <ul class="footer-links" data-astro-cid-sz7xmlte> <li data-astro-cid-sz7xmlte><a href="/all-post" data-astro-cid-sz7xmlte>Все статьи</a></li> <li data-astro-cid-sz7xmlte><a href="/komp" data-astro-cid-sz7xmlte>Каталог компаний</a></li> </ul> </div> <div class="footer-links-group" data-astro-cid-sz7xmlte> <h4 class="footer-heading" data-astro-cid-sz7xmlte>Документы</h4> <ul class="footer-links" data-astro-cid-sz7xmlte> <li data-astro-cid-sz7xmlte><a href="/politika-konfidentsialnosti/" data-astro-cid-sz7xmlte>Политика конфиденциальности</a></li> <li data-astro-cid-sz7xmlte><a href="/soglasie/" data-astro-cid-sz7xmlte>Согласие Пользователя</a></li> <li data-astro-cid-sz7xmlte><a href="/kontakty/" data-astro-cid-sz7xmlte>Контакты</a></li> </ul> </div> </div> <div class="footer-bottom" data-astro-cid-sz7xmlte> <p data-astro-cid-sz7xmlte>&copy; 2026 Мой Газ. Все права защищены.</p> </div> </div> </footer>  </div> </body> </html> 
